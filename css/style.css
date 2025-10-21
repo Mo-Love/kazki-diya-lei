@@ -1,1 +1,5 @@
-
+body { font-family: 'Roboto', sans-serif; }
+.hero h1 { text-shadow: 2px 2px 4px rgba(0,0,0,0.1); }
+.card:hover { transform: scale(1.05); transition: 0.3s; }
+.carousel-item img:hover { animation: roll 1s ease-in-out; }
+@keyframes roll { 0% { transform: rotate(0deg); } 50% { transform: rotate(10deg); } 100% { transform: rotate(0deg); } }
