@@ -1,5 +1,5 @@
 body { font-family: 'Roboto', sans-serif; }
 .hero h1 { text-shadow: 2px 2px 4px rgba(0,0,0,0.1); }
-.card:hover { transform: scale(1.05); transition: 0.3s; }
-.carousel-item img:hover { animation: roll 1s ease-in-out; }
-@keyframes roll { 0% { transform: rotate(0deg); } 50% { transform: rotate(10deg); } 100% { transform: rotate(0deg); } }
+.card:hover, .kolobok-img:hover { transform: scale(1.05); transition: 0.3s; animation: roll 1s ease-in-out; }
+@keyframes roll { 0% { transform: rotate(0deg) scale(1); } 50% { transform: rotate(360deg) scale(1.1); } 100% { transform: rotate(720deg) scale(1); } } /* Колобок крутиться! */
+.price { font-size: 1.5rem; color: #28a745; font-weight: bold; }
