@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Колобок – Казкодія Лей</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Хедер (як у index) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Казкодія Лей</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/@%D0%9A%D0%B0%D0%B7%D0%BA%D0%B8%D0%B4%D0%BB%D1%8F%D0%9B%D0%B5%D1%97" target="_blank">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Герой -->
+    <section class="hero text-center py-5" style="background: linear-gradient(to right, #fff3cd, #ffeaa7);">
+        <div class="container">
+            <h1 style="font-family: 'Reenie Beanie', cursive; font-size: 3rem; color: #d63031;">Колобок</h1>
+            <p class="lead">Золотий мандрівник котиться стежками, співаючи пісню. Але пам'ятай: хитра лисичка чатує!</p>
+        </div>
+    </section>
+
+    <!-- Інтерактивна казка (слайдер) -->
+    <section class="py-5" style="background: #e8f5e8;">
+        <div class="container">
+            <h2 class="text-center mb-4">Подорож Колобка</h2>
+            <div id="storyCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <img src="img/kolobok-1.jpg" class="d-block mx-auto" alt="Дідусь і бабуся" style="max-height: 400px;">
+                        <div class="carousel-caption d-block">
+                            <h3>Жили-були дідусь та бабуся...</h3>
+                            <p>Бабуся замісила тісто і зліпила Колобка. Він – рум'яний, веселий, з виразними очками!</p>
+                            <button class="btn btn-warning" onclick="playSong('kolobok-song')">🎵 Почуй пісеньку</button>
+                            <button class="btn btn-primary" onclick="colorPage(1)">Розфарбуй!</button>
+                        </div>
+                    </div>
+                    <!-- Додай слайди для інших ілюстрацій: ліс, вовк, заєць, ведмідь, лисиця -->
+                    <div class="carousel-item text-center">
+                        <img src="img/kolobok-2.jpg" class="d-block mx-auto" alt="Колобок у лісі" style="max-height: 400px;">
+                        <div class="carousel-caption d-block">
+                            <h3>Колобок покотився!</h3>
+                            <p>"Я від діда відійшов, від бабусі відійшов!" – співав він, уникаючи пасток.</p>
+                            <button class="btn btn-warning" onclick="playSong('kolobok-song')">🎵 Співай!</button>
+                            <button class="btn btn-primary" onclick="colorPage(2)">Розфарбуй!</button>
+                        </div>
+                    </div>
+                    <!-- ... Додай ще 3-4 слайди з твоїми img -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#storyCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#storyCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Продаж -->
+    <section class="py-5 bg-light text-center">
+        <div class="container">
+            <h2>Хочеш розмальовку додому?</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4"><button class="btn btn-warning btn-lg w-100">PDF за ₴50</button></div>
+                <div class="col-md-4"><button class="btn btn-warning btn-lg w-100">Друк за ₴150</button></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер (як у index) -->
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container"><p>&copy; 2025 Казкодія Лей. 🇺🇦</p></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
